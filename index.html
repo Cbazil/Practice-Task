@@ -43,6 +43,19 @@
                                 "main     main     sidebar"
                                 "footer   footer   footer";
             }
+            @media (max-width: 500px){
+              .grid-1 {
+
+            grid-template-columns: repeat(1fr);
+            grid-template-rows: 80px auto 80px;
+            grid-gap: 20px;
+
+            grid-template-areas: "header   header   header"
+                                "main     main     main"
+                                "sidebar sidebar sidebar"
+                                "footer   footer   footer";
+            }
+          }
 
             /* items */
 
@@ -73,6 +86,18 @@
                                 "article sidebar";
 
             }
+            @media (max-width: 500px){
+              .item-2 {
+                grid-template-columns: 30%;
+                grid-template-rows: auto auto;
+                grid-gap: 20px;
+
+                grid-template-areas: "header header"
+                                    "article article"
+                                    "sidebar sidebar";
+              }
+
+            }
         .item-3 {
             background: #30997a;
             grid-area: sidebar;
@@ -93,8 +118,6 @@
             background: #e03f3f;
             grid-area: sidebar;
             }
-
-            @media (min-width: )
 
 
     </style>
