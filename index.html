@@ -8,16 +8,17 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
+
 <body>
     <section class="grid-1">
         <div class="item-1">1</div>
-    
+
         <div class="item-2">
             <div class="item-5">5</div>
             <div class="item-6">6</div>
             <div class="item-7">7</div>
         </div>
-    
+
         <div class="item-3">3</div>
         <div class="item-4">4</div>
     </section>
@@ -33,11 +34,11 @@
             width: 100%;
             max-width: 770px;
             margin: 0 auto;
-            
+
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 80px auto 80px;
             grid-gap: 20px;
-            
+
             grid-template-areas: "header   header   header"
                                 "main     main     sidebar"
                                 "footer   footer   footer";
@@ -61,16 +62,16 @@
         .item-2 {
             background: #33a8a5;
             grid-area: main;
-            
+
             display: grid;
-            
+
             grid-template-columns: 1fr 30%;
             grid-template-rows: auto auto;
             grid-gap: 20px;
-            
+
             grid-template-areas: "header header"
                                 "article sidebar";
-            
+
             }
         .item-3 {
             background: #30997a;
@@ -93,8 +94,9 @@
             grid-area: sidebar;
             }
 
-            
-    
+            @media (min-width: )
+
+
     </style>
 </body>
 </html>
